@@ -31,7 +31,7 @@ jobs:
     - run: npm test
       working-directory: firstjs
       
-    - name: master
+    - name: main
       run: |
         git config --global user.name $user_name
         git config --global user.email $user_email
