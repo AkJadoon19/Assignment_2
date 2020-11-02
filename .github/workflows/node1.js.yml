@@ -33,12 +33,12 @@ jobs:
       
     - name: master
       run: |
-        git config --global user.name $abdullah_khan
-        git config --global user.email $u2017023@giki.edu.pk
+        git config --global user.name $user_name
+        git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
       env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+        user_name: 'AkJadoon19'
+        user_email: 'u2017023@gik.edu.pk'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
