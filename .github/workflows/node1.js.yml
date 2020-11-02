@@ -37,6 +37,8 @@ jobs:
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
+     
+      working-directory: firstjs
       env:
         user_name: 'AkJadoon19'
         user_email: 'u2017023@gik.edu.pk'
